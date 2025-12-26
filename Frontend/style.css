@@ -1,0 +1,47 @@
+/* --- Custom Pill for Selected Drugs --- */
+.pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: #0e7490; /* cyan-700 */
+    color: white;
+    border-radius: 9999px; /* rounded-full */
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pill button {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    color: #a5f3fc; /* cyan-200 */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+.pill button:hover {
+    color: white;
+}
+
+/* --- Custom CSS Loader --- */
+.loader {
+    border: 5px solid #222e3a; /* bg-gray-700 */
+    border-top: 5px solid #06b6d4; /* cyan-500 */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* --- Utility Classes (for JS) --- */
+.hidden {
+    display: none;
+}

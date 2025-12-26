@@ -1,0 +1,12 @@
+﻿salt_a,salt_b,effect,severity
+Ibuprofen,Lisinopril,Reduces the blood pressure-lowering effect of Lisinopril and can increase the risk of kidney damage.,Moderate
+Aspirin,Ibuprofen,Increased risk of gastrointestinal (stomach) bleeding or ulcers.,Moderate
+Aspirin,Warfarin,Significantly increases the risk of major bleeding.,High
+Clopidogrel,Escitalopram,Increases the risk of bleeding.,Moderate
+Clopidogrel,Ibuprofen,Increases the risk of stomach bleeding.,High
+Ibuprofen,Warfarin,Significantly increases the risk of major bleeding.,High
+Paracetamol,Warfarin,"Long-term or high-dose use of Paracetamol can increase the effect of Warfarin, raising bleeding risk.",Low
+Escitalopram,Sertraline,"High risk of Serotonin Syndrome, which can be life-threatening. Symptoms include confusion, rapid heart rate, and agitation.",HIgh
+Caffeine,Escitalopram,"Can increase anxiety, heart rate, and risk of serotonin syndrome.",Low
+Phenylephrine,Sertraline,Can cause a dangerous increase in blood pressure and heart rate (Hypertensive Crisis),High
+Caffeine,Phenylephrine,"Both are stimulants. Taken together, they can increase heart rate, blood pressure, and cause jitteriness or anxiety.",Low
