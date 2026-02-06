@@ -30,6 +30,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     # CorsMiddleware must be as high as possible, especially before any middleware 
     # that can generate responses such as Django's CommonMiddleware.
+    'whitenoise.middleware.WhiteNoiseMiddleware'
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
