@@ -12,8 +12,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'your-default-dev-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = [os.environ.get('RENDER_EXTERNAL_HOSTNAME', '127.0.0.1'), 'localhost']
-
+ALLOWED_HOSTS = [
+    'med-matrix-yashraj.onrender.com', # Replace with your actual Render app name
+    '127.0.0.1', 
+    'localhost'
+]
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -42,6 +45,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'medmatrix.urls'
+
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# --- CORS Settings ---
+# Allows your index.html (frontend) to talk to the Django API
+CORS_ALLOW_ALL_ORIGINS = True
 
 TEMPLATES = [
     {
@@ -76,18 +87,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = 'static/'
+
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# --- CORS CONFIGURATION ---
-# Allows your frontend (e.g., Live Server or local file) to access the API
-CORS_ALLOW_ALL_ORIGINS = True 
-
-# If you want to be more secure in production, use:
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:5500",
-#     "http://127.0.0.1:5500",
-# ]
